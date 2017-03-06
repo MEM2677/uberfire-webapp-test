@@ -27,7 +27,9 @@
   <!-- Specify the paths for translatable code -->
   <source path='client'/>
   <source path='shared'/>
-  <source path='impl'/>
+  <!-- AAAARGH! This makes the service for the client
+  <source path='shared'/>
+  -->
 
   <!-- i18n -->
   <extend-property name="locale" values="es_ES"/>

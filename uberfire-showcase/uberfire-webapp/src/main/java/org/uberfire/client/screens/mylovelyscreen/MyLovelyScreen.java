@@ -6,6 +6,7 @@ import org.uberfire.client.annotations.WorkbenchPartTitle;
 import org.uberfire.client.annotations.WorkbenchPartView;
 import org.uberfire.client.annotations.WorkbenchScreen;
 import org.uberfire.client.mvp.UberElement;
+import org.uberfire.impl.EchoServiceImpl;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;
@@ -21,10 +22,10 @@ public class MyLovelyScreen {
     }
 
 //    @Inject
-//    private Caller<org.uberfire.shared.EchoServiceImpl> echoService;
-//
-//    @Inject
-//    private org.uberfire.impl.EchoServiceImpl echoServiceImpl;
+//    private Caller<EchoServiceImpl> echoService;
+
+    @Inject
+    private EchoServiceImpl echoServiceImpl;
 
     @Inject
     private View view;
