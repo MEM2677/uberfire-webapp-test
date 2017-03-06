@@ -28,7 +28,7 @@
   <source path='client'/>
   <source path='shared'/>
   <!-- AAAARGH! This makes the service for the client
-  <source path='shared'/>
+  <source path='impl'/>
   -->
 
   <!-- i18n -->
