@@ -1,9 +1,7 @@
 package org.uberfire.client.screens.mylovelyscreen;
 
-import org.jboss.errai.common.client.dom.Button;
-import org.jboss.errai.common.client.dom.Event;
-import org.jboss.errai.common.client.dom.Heading;
-import org.jboss.errai.common.client.dom.Label;
+import org.apache.helix.examples.Quickstart;
+import org.jboss.errai.common.client.dom.*;
 import org.jboss.errai.ui.client.local.api.IsElement;
 import org.jboss.errai.ui.shared.api.annotations.*;
 import org.slf4j.Logger;
@@ -30,7 +28,8 @@ public class MyLovelyView implements MyLovelyScreen.View, IsElement {
     // The name to reference in the template can also be specified manually
     @Inject
     @DataField
-    private Label echoField;
+    //private Label echoField;
+    private TextInput echoField;
 
     // We can also choose to instantiate our own data fields. Injection is not required.
 
@@ -53,9 +52,9 @@ public class MyLovelyView implements MyLovelyScreen.View, IsElement {
     @EventHandler("submit")
     public void submit(@ForEvent("click") final Event event) {
         logger.info("****");
-        logger.info("****");
+        logger.info("**** " + echoField.getValue());
         logger.info("****");
 //        welcome.setInnerHTML("WOW WOW!");
-        welcome.setInnerHTML("GOTCHA!");
+        welcome.setInnerHTML("GOTCHA! " + echoField.getValue());
     }
 }
