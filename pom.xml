@@ -54,7 +54,7 @@
     <version.com.google.gwt>2.8.0</version.com.google.gwt>
     <version.com.allen-sauer.gwt.dnd>3.3.3</version.com.allen-sauer.gwt.dnd>
     <version.com.google.guava>20.0</version.com.google.guava>
-    <version.org.apache.tomcat>7.0.61</version.org.apache.tomcat>
+    <version.org.apache.tomcat>7.0.81</version.org.apache.tomcat>
     <!-- Version 1.1.0.Final which is coming from ip-bom is not compatible with GWT 2.8.0 -->
     <version.javax.validation>1.0.0.GA</version.javax.validation>
 
